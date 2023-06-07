@@ -14,8 +14,8 @@ const sendOrderEmail = async (orderData) => {
 
     let info = await transporter.sendMail({
       from: '"Fashio Store" <hamza0332324@gmail.com>',
-      to: orderData.email,
-      subject: "Order verification ✔",
+      to: `${orderData.email}, hamza0332324@gmail.com`,
+      subject: "Order Placed ✔", 
       text: "Fashio Store",
       html: `
       <h2>User Details</h2>
